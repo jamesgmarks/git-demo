@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokemon revisited</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id='pokemonDisplay' class='hidden'>
+    <h1 id='pokemonDisplayName'>Name</h1>
+    <div id='imageLoader'>
+      <img id='pokemonDisplayImage'>
+    </div>
+    <button type='button' id='btnHide'>Hide</button>
+  </div>
+  <div id='listContainer'>
+    <div id='searchForm'>
+      <label>Name:</label>
+      <input type='text' id='pokemonNameSearch' placeholder="Enter Search Term">
+      <button type='button' id='searchPokemonButton'>Search</button>
+    </div>
+    <div id='pokemonList'>
+    </div>
+    <template id='pokemonItemTemplate'>
+      <div class='pokemonItem'>
+        <div class='pokemonItemName'></div>
+        <div>
+          <a class='pokemonItemLink'>View</a>
+        </div>
+      </div>
+    </template>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
